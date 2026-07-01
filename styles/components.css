@@ -1,0 +1,35 @@
+.hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.button-primary {
+  background: var(--primary);
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  color: black;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}

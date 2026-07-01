@@ -1,0 +1,31 @@
+:root {
+
+  /* Brand */
+
+  --primary: #18d8ff;
+  --primary-dark: #0ea5c6;
+
+  --secondary: #6ee7ff;
+
+  /* Background */
+
+  --background: #050816;
+  --surface: #0b1120;
+  --surface-2: #111827;
+
+  /* Text */
+
+  --text: #ffffff;
+  --text-secondary: #cbd5e1;
+  --muted: #94a3b8;
+
+  /* Borders */
+
+  --border: rgba(255,255,255,.08);
+
+  /* Effects */
+
+  --shadow:
+      0 20px 50px rgba(0,0,0,.35);
+
+}

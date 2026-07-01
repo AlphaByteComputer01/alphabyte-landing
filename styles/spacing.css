@@ -1,0 +1,21 @@
+.section{
+
+padding:120px 0;
+
+}
+
+.container{
+
+width:min(1180px,92%);
+
+margin:auto;
+
+}
+
+.grid{
+
+display:grid;
+
+gap:2rem;
+
+}
