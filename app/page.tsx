@@ -1,3 +1,4 @@
+import Hero from "@/components/hero/Hero";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -5,59 +6,7 @@ export default function HomePage() {
     <main>
 
       {/* HERO */}
-      <section className="hero">
-
-          <div className="hero-background" />
-
-          <div className="hero-grid">
-
-              <div>
-
-                  <p className="hero-tag">
-                      AFRICA'S DIGITAL INFRASTRUCTURE
-                  </p>
-
-                  <h1>
-
-                      Building
-
-                      <span>Trust.</span>
-
-                      Digitally.
-
-                  </h1>
-
-                  <p className="hero-description">
-
-                      ALPHABYTE designs secure digital platforms
-                      that transform governance,
-                      education and commerce across Africa.
-
-                  </p>
-
-                  <div className="hero-buttons">
-
-                      <Link
-                          href="#products"
-                          className="btn-primary"
-                      >
-                          Explore Products
-                      </Link>
-
-                      <Link
-                          href="#vision"
-                          className="btn-secondary"
-                      >
-                          Our Vision
-                      </Link>
-
-                  </div>
-
-              </div>
-
-          </div>
-
-      </section>
+      <Hero />
 
       {/* MISSION */}
       <section className="section container">
@@ -74,7 +23,7 @@ export default function HomePage() {
         <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}>
           
           <div className="card">
-            <h3>UniVote</h3>
+            <h3>Univote</h3>
             <p>Secure digital voting platform.</p>
           </div>
 

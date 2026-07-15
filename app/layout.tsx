@@ -32,6 +32,11 @@ export const metadata: Metadata = {
       "Building Africa's Trusted Digital Infrastructure.",
     type: "website",
   },
+  icons: {
+    icon: "/logo/favicon.ico",
+    shortcut: "/logo/favicon.ico",
+    apple: "/logo/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({
