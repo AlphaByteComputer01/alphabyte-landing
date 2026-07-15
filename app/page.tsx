@@ -1,3 +1,6 @@
+import Mission from "@/components/sections/Mission";
+import Vision from "@/components/sections/Vision";
+import Pillars from "@/components/sections/Pillars";
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/hero/Hero";
 
@@ -11,35 +14,66 @@ export default function HomePage() {
       <Hero />
 
       {/* MISSION */}
-      <section className="section container">
-        <h2>OUR MISSION</h2>
-        <p className="subtitle">
-          We build trusted digital systems that power the next generation of African institutions.
-        </p>
-      </section>
+
+      <Mission />
+
+      {/* VISION */}
+
+      <Vision />
+
+      {/* CORE PILLARS */}
+
+      <Pillars />
 
       {/* PRODUCTS */}
-      <section className="section container">
+
+      <section
+        id="products"
+        className="section container"
+      >
+
         <h2>WHAT WE BUILD</h2>
 
-        <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}>
-          
+        <div
+          className="grid"
+          style={{
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(250px,1fr))",
+          }}
+        >
+
           <div className="card">
-            <h3>Univote</h3>
-            <p>Secure digital voting platform.</p>
+
+            <h3>UniVote</h3>
+
+            <p>
+              Secure digital voting platform.
+            </p>
+
           </div>
 
           <div className="card">
+
             <h3>Kanah</h3>
-            <p>Smart African commerce ecosystem.</p>
+
+            <p>
+              Smart African commerce ecosystem.
+            </p>
+
           </div>
 
           <div className="card">
+
             <h3>Solo Learning</h3>
-            <p>Next-gen education platform.</p>
+
+            <p>
+              Next-generation education platform.
+            </p>
+
           </div>
 
         </div>
+
       </section>
 
     </main>
