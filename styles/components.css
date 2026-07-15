@@ -10,7 +10,7 @@
   max-width: 600px;
 }
 
-.button-primary {
+.btn-primary {
   background: var(--primary);
   padding: 14px 28px;
   border-radius: var(--radius);
@@ -19,7 +19,7 @@
   transition: var(--transition);
 }
 
-.button-primary:hover {
+.btn-primary:hover {
   transform: translateY(-2px);
 }
 
@@ -32,4 +32,110 @@
 
 .card:hover {
   transform: translateY(-6px);
+}
+
+.navbar{
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+backdrop-filter:blur(18px);
+
+background:rgba(10,20,40,.65);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.navbar-logo{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+}
+
+.navbar-brand h1{
+
+font-size:1.1rem;
+
+font-weight:800;
+
+letter-spacing:.05em;
+
+margin:0;
+
+}
+
+.navbar-brand p{
+
+font-size:.82rem;
+
+opacity:.75;
+
+margin:0;
+
+}
+
+.navbar-menu{
+
+display:flex;
+
+gap:34px;
+
+}
+
+.navbar-menu a{
+
+text-decoration:none;
+
+color:white;
+
+transition:.3s;
+
+font-weight:500;
+
+}
+
+.navbar-menu a:hover{
+
+opacity:.65;
+
+}
+
+.navbar-actions{
+
+display:flex;
+
+gap:18px;
+
+align-items:center;
+
+}
+
+.theme-button{
+
+background:none;
+
+border:none;
+
+font-size:1.2rem;
+
+cursor:pointer;
+
+color:white;
+
 }

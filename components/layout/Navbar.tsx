@@ -1,30 +1,71 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
     <header className="navbar">
-      <div className="navbar-left">
+      <div className="navbar-logo">
+
         <Image
           src="/logo/alphabyte-logo.png"
-          alt="ALPHABYTE"
-          width={42}
-          height={42}
+          alt="ALPHABYTE Logo"
+          width={48}
+          height={48}
           priority
         />
 
         <div className="navbar-brand">
-          <h2 translate="no">ALPHABYTE</h2>
-          <span>
+
+          <h1 translate="no">
+            ALPHABYTE
+          </h1>
+
+          <p>
             Building Africa's Digital Infrastructure
-          </span>
+          </p>
+
         </div>
+
       </div>
 
-      <nav className="navbar-links">
-        <a href="#vision">Vision</a>
-        <a href="#products">Products</a>
-        <a href="#contact">Contact</a>
+      <nav className="navbar-menu">
+
+        <Link href="#vision">
+          Vision
+        </Link>
+
+        <Link href="#products">
+          Products
+        </Link>
+
+        <Link href="#roadmap">
+          Roadmap
+        </Link>
+
+        <Link href="#founder">
+          Founder
+        </Link>
+
       </nav>
+
+      <div className="navbar-actions">
+
+        <button
+          className="theme-button"
+          aria-label="Theme Switch"
+        >
+          🌙
+        </button>
+
+        <Link
+          href="#products"
+          className="btn-primary"
+        >
+          Explore Products
+        </Link>
+
+      </div>
+
     </header>
   );
 }

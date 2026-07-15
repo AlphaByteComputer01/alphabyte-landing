@@ -1,9 +1,11 @@
+import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/hero/Hero";
-import Link from "next/link";
 
 export default function HomePage() {
   return (
     <main>
+
+      <Navbar />
 
       {/* HERO */}
       <Hero />

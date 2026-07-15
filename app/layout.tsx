@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
 
 export const metadata: Metadata = {
   title: "ALPHABYTE | Building Africa's Trusted Digital Infrastructure",
@@ -28,8 +22,7 @@ export const metadata: Metadata = {
   creator: "ALPHABYTE",
   openGraph: {
     title: "ALPHABYTE",
-    description:
-      "Building Africa's Trusted Digital Infrastructure.",
+    description: "Building Africa's Trusted Digital Infrastructure.",
     type: "website",
   },
   icons: {
@@ -46,9 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.variable}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
