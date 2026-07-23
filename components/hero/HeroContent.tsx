@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroContent() {
   return (
-    <div className="hero-content">
+    <div className="hero-content fade">
 
       <p className="hero-tag">
         AFRICA'S DIGITAL INFRASTRUCTURE

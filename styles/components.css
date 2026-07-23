@@ -197,3 +197,132 @@ line-height:1.8;
 opacity:.85;
 
 }
+
+/* ==========================================================
+   HERO BACKGROUND
+========================================================== */
+
+.hero{
+position:relative;
+overflow:hidden;
+min-height:100vh;
+display:flex;
+align-items:center;
+isolation:isolate;
+}
+
+.hero-gradient{
+
+position:absolute;
+inset:0;
+
+background:
+
+linear-gradient(
+180deg,
+#07101d 0%,
+#0b1627 40%,
+#081320 100%
+);
+
+z-index:-3;
+
+}
+
+.hero-grid-bg{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+linear-gradient(
+rgba(255,255,255,.04) 1px,
+transparent 1px),
+
+linear-gradient(
+90deg,
+rgba(255,255,255,.04) 1px,
+transparent 1px);
+
+background-size:60px 60px;
+
+mask-image:
+linear-gradient(
+to bottom,
+rgba(0,0,0,.8),
+transparent);
+
+opacity:.35;
+
+z-index:-2;
+
+}
+
+.hero-glow{
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+left:50%;
+
+top:-180px;
+
+transform:translateX(-50%);
+
+background:
+
+radial-gradient(
+circle,
+rgba(0,153,255,.35),
+transparent 70%);
+
+filter:blur(70px);
+
+z-index:-1;
+
+animation:glow 8s ease-in-out infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes glow{
+
+0%{
+
+transform:
+translateX(-50%)
+scale(1);
+
+}
+
+50%{
+
+transform:
+translateX(-50%)
+scale(1.08);
+
+}
+
+100%{
+
+transform:
+translateX(-50%)
+scale(1);
+
+}
+
+}
+
+.hero-grid{
+
+position:relative;
+
+z-index:2;
+
+}
