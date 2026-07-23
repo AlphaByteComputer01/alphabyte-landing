@@ -8,19 +8,19 @@ export default function HeroContent() {
         AFRICA'S DIGITAL INFRASTRUCTURE
       </p>
 
-      <h1>
+      <h1 className="hero-title">
         Building
         <span>Trust.</span>
         Digitally.
       </h1>
 
-      <p className="hero-description">
+      <p className="hero-description hero-text">
         ALPHABYTE designs secure digital platforms
         that transform governance,
         education and commerce across Africa.
       </p>
 
-      <div className="hero-buttons">
+      <div className="hero-buttons hero-actions">
 
         <Link
           href="#products"
